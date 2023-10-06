@@ -25,6 +25,7 @@ body{
     height: 100vh;
 }
 .main{
+  width: 90%;
   height: 100%;
   margin: 0 40px 10px 40px;
 }
@@ -56,10 +57,58 @@ body{
 
 .main-card{
   background-color: yellow;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; 
   height: 80%;
   padding: 20px;
 }
+
+.img-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  /* align-items: center; */
+  width: 100%;
+  background-color: green;
+}
+.large-img-card{
+  width: 100%;
+  
+  /* margin: 10px; */
+
+}
+.large-img-card>img{
+  width: 70%;
+  border-radius: 10px;
+}
+.small-img-card{
+  display: flex;
+  gap: 20px;
+}
+.small-img-card>img{
+  border-radius: 10px;
+}
+
+
+/* description styling */
+
+.description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+/* Style for each card */
+/* .card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+} */
+
 
 /* footer styling */
 .attribution {
