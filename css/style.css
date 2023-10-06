@@ -56,7 +56,8 @@ body{
 /* styling of main card and description */
 
 .main-card{
-  background-color: yellow;
+  /* background-color: yellow; */
+  
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px; 
@@ -72,7 +73,7 @@ body{
   gap: 20px;
   /* align-items: center; */
   width: 100%;
-  background-color: green;
+  /* background-color: green; */
 }
 .large-img-card{
   width: 100%;
@@ -100,6 +101,39 @@ body{
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+  margin-right: 20px;
+  padding-right: 30px;
+}
+.description>h4{
+  color: orange;
+}
+
+.description-percent{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.add-card{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+ 
+}
+.add-desc-card{
+  background-color: grey;
+  gap: 20px;
+  padding: 10px 40px;
+  border-radius: 10px;
+  color: white;
+}
+.add-btn{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: orange;
+  padding: 10px 40px;
+  border-radius: 10px;
+  color: white;
 }
 /* Style for each card */
 /* .card {
