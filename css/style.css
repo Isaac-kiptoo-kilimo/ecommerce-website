@@ -1,0 +1,71 @@
+/* Primary
+- Orange: hsl(26, 100%, 55%)
+- Pale orange: hsl(25, 100%, 94%) */
+
+
+/* Neutral
+
+- Very dark blue: hsl(220, 13%, 13%)
+- Dark grayish blue: hsl(219, 9%, 45%)
+- Grayish blue: hsl(220, 14%, 75%)
+- Light grayish blue: hsl(223, 64%, 98%)
+- White: hsl(0, 0%, 100%)
+- Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%) */
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+    /* background-color: rgb(247, 174, 174); */
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+}
+.main{
+  height: 100%;
+  margin: 0 40px 10px 40px;
+}
+.navbar{
+  /* background-color: rgb(169, 216, 169); */
+  display: flex;
+  
+  padding: 30px 10px;
+  border-bottom: 1px solid grey;
+  /* justify-content: space-between; */
+  /* width: 100%; */
+}
+.nav-start{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  /* background-color: yellow; */
+ 
+}
+.nav-start>ul{
+  width: 80%;
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  
+}
+/* styling of main card and description */
+
+.main-card{
+  background-color: yellow;
+  display: flex;
+  height: 80%;
+  padding: 20px;
+}
+
+/* footer styling */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
