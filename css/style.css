@@ -34,7 +34,7 @@ body{
   /* background-color: rgb(169, 216, 169); */
   display: flex;
   
-  padding: 30px 10px;
+  padding: 10px;
   border-bottom: 1px solid hsl(223, 64%, 98%);
   /* justify-content: space-between; */
   /* width: 100%; */
