@@ -36,38 +36,38 @@ body{
   
   padding: 10px;
   border-bottom: 1px solid hsl(223, 64%, 98%);
-  /* justify-content: space-between; */
-  /* width: 100%; */
+ 
 }
 .nav-start{
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 80%;
-  /* background-color: yellow; */
  
 }
+
 .nav-start>ul{
   width: 80%;
   display: flex;
   gap: 40px;
   list-style: none;
   color: hsl(219, 9%, 45%);
-  
+  margin-left: 20px;  
 }
 
 .nav-end{
+  display: flex;
+  align-items: center;
   margin: 20px;
   gap: 20px;
 }
+
 .nav-end>img{
   margin: 0 10px;
 }
 /* styling of main card and description */
 
-.main-card{
-  /* background-color: yellow; */
-  
+.main-card{ 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px; 
@@ -82,25 +82,50 @@ body{
   justify-content: center;
   padding: 20px;
   gap: 20px;
-  /* align-items: center; */
   width: 100%;
-  /* background-color: green; */
 }
+
+
 .large-img-card{
   width: 100%;
-  
-  /* margin: 10px; */
 
 }
+
+
 .large-img-card>img{
   width: 80%;
   border-radius: 10px;
 }
 .small-img-card{
   display: flex;
-  gap: 30px;
+  gap: 25px;
 }
-.small-img-card>img{
+
+.small-img-card:nth-child(1){
+background-color: red;
+z-index: -1;
+}
+
+
+.image-container {
+    position: relative; 
+    display: flex;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(227, 220, 220, 0.5);
+    border: 2px solid orange;
+    border-radius: 10px;
+    
+}
+
+.image-container>img{
   border-radius: 10px;
 }
 
@@ -157,13 +182,6 @@ body{
   border-radius: 10px;
   color: white;
 }
-/* Style for each card */
-/* .card {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-} */
 
 
 /* footer styling */
@@ -174,3 +192,68 @@ body{
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media (max-width: 375px) {
+  body{
+    margin: 0;
+    padding: 0;
+    /* background-color: red; */
+    width: 100%;
+  }
+
+  .main{
+    margin: 0;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 10px 0;
+  }
+  .nav-start>ul{
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+  }
+  .nav-start{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  .main-card{
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+  }
+
+  .small-img-card{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: green;
+    /* flex-wrap: wrap; */
+    gap: 30px;
+  }
+  .description{
+    margin: 0;
+    padding: 0;
+    gap: 0px;
+    background-color: red;
+  }
+
+  .add-card{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+  }
+ 
+  
+}
+
