@@ -153,6 +153,9 @@ z-index: -1;
   align-items: center;
   gap: 30px;
 }
+.description-percent>h4{
+  color: hsl(26, 100%, 55%);;
+}
 .description-content{
   color: hsl(219, 9%, 45%);
 }
